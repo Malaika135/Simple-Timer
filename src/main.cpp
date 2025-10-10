@@ -12,6 +12,7 @@ void IRAM_ATTR onTimer() {
 void setup() {
   pinMode(LED_PIN, OUTPUT);
 
+  
   // timerBegin(timer number 0-3, prescaler, countUp)
   // 80 MHz / 80 = 1 MHz → tick = 1 µs
   My_timer = timerBegin(0, 80, true);
